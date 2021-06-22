@@ -165,7 +165,7 @@
                     if (isset($_POST['envoi']))
                     {
                       // Ma clé privée
-                    $secret = "6Lf227oUAAAAAGAWX3blaEPT6Dq9Mh-vmyZyhjy9";
+                    $secret = "";
                     // Paramètre renvoyé par le recaptcha
                     $response = $_POST['g-recaptcha-response'];
                     // On récupère l'IP de l'utilisateur
