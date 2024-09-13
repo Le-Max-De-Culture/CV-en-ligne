@@ -1,5 +1,5 @@
-## maxime-luce.fr
-Code de mon CV en ligne (www.maxime-luce.fr)
+## Présentation du repos "maxime-luce.fr"
+Code de mon site personnel (cv) en ligne (www.maxime-luce.fr)
 
 ## Mise à jour
 - 13/09/2024 :
@@ -7,6 +7,9 @@ Code de mon CV en ligne (www.maxime-luce.fr)
     - mise à jour des informations personnelles
     - ajout de la page "Animation"
     - mise à jour du CV
+
+## Développement
+- Maxime LUCE
 
 ## License
 
