@@ -1,204 +1,101 @@
-*{
+/* REVIEW: variables */
+:root{
+  --main-bg-color: #6a89cc;
+}
+/* REVIEW: end variables */
+body, html{
   margin: 0;
-}
-body{
-  margin: auto;
-  background-color: #353b48;
-  color:white;
-  scroll-behavior: smooth;
-  font: normal 100% 'Poppins', Helvetica, sans-serif;
-  font-size: 20px;
-}
-/* REVIEW: import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-/* REVIEW: end import */
-
-/* REVIEW: page */
-section{
-  max-width: 1600px;
-  /*border: 1px solid white;*/
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-
-  display: flex;
-  flex-direction: row;
-}
-/* REVIEW: end page */
-/* REVIEW: menu */
-header#mobile{
-  display: none;
-}
-section div#menu{
-  width: 20%;
-  max-width: 400px;
-  position: fixed;
-  /*border: 1px solid blue;*/
-
-}
-section div#menu img{
-  max-width: 100%;
-}
-section div#menu nav ul{
   padding: 0;
+  font-family: 'Raleway', sans-serif;
+  z-index: 1;
+  scroll-behavior: smooth;
+  color: #333333;
 }
-section div#menu nav ul li{
-  margin-bottom: 5px;
-  list-style: none;
-  width: 100%;
-  height: 50px;
-  background-color: #2e86de;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  transition:background 200ms;
-}
-section div#menu nav ul li:hover{
-  background-color: orange;
-}
-section div#menu nav ul a{
-  color:white;
+a{
+  color : var(--main-bg-color);
   text-decoration: none;
+  font-weight: 600;
 }
-/* REVIEW: end menu */
-/* REVIEW: content */
-h1{
-  color: #2e86de;
-  font-size: 45px;
-  margin-bottom: 20px;
+a:hover{
+  text-decoration: underline;
 }
-h2{
-  color: orange;
-  font-size: 35px;
-  margin-bottom: 15px;
+.italic{
+  font-style: italic;
 }
-section article a, footer a{
-  color:orange;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
-section article a:after, footer a:after{
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  cursor: pointer;
-  display: inline;
-  color: orange;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: orange;
-  transition: width 0.2s ease 0s, left 0.2s ease 0s;
-  width: 0;
-}
-section article a:hover:after, footer a:hover:after{
-  width: 100%;
-  left: 0;
-  color:orange;
-}
-section article{
-  margin-left: 20%;
-  padding: 30px;
-  text-align: justify;
-  width: 100%;
-}
-section article p{
-  margin-bottom: 15px;
-}
-section article p span{
-  color : #2e86de;
-}
-section article p img{
-  max-width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-form#newsletter{
-  width: 50%;
+#global_container{
 
-}
-form#newsletter input::placeholder{
-  color: white;
-}
-form#newsletter input{
-  border-color: orange;
-  border-style: solid;
-  color: white;
-  background-color: transparent;
-  padding: 20px;
-  border-radius: 10px;
-  outline: 3px solid transparent;
-	transition: outline .2s, flex-basis .2s;
-}
-form#newsletter input:last-child{
-  background-color: orange;
-}
-form#newsletter input:hover, form#newsletter input:focus{
-  border-color: #00a8ff;
-}
-form#newsletter input:last-child:hover, form#newsletter input:last-child:focus{
-  border-color: #00a8ff;
-  background-color: #00a8ff;
-}
-@media screen and (min-width: 1600px)
-{
-  section article{
-    margin-left: 400px;
-    text-align: justify;
-  }
-}
-/* REVIEW: end content */
-/* REVIEW: footer */
-footer{
-  position:static;
-  padding-bottom: 50px;
-  width: 100%;
-  text-align: center;
-  bottom: 0;
-}
-footer p{
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-div#container_social_network{
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  margin-bottom: 2%;
+}
+#global_container section{
+  margin-top: 150px;
+  background-color: white;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 550px;
-  margin-bottom: 20px;
 }
-div#container_social_network a{
-  color: white;
-  text-decoration: none;
+/* REVIEW: global right */
+#right p.title_list{
+  color: #333333;
+  font-size: 1.25em;
+  font-weight: 600;
 }
-div#container_social_network a:after{
-  background: none;
+#right ul li{
+  color: #777777;
 }
-div#container_social_network a:hover{
-  color: #00a8ff;
-  border-color:transparent;
+.global_right_container{
+  border-bottom: 1px solid #777777;
 }
-/* REVIEW: end footer */
-/* REVIEW: admin */
-table{
-  border-collapse: collapse;
-  max-width: 1300px;
-  margin-top: 15px;
+.global_right_container .title{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.global_right_container .date_global_right{
+  font-style: italic;
+  color: var(--main-bg-color);
+  font-size: 0.85em;
+}
+.global_right_container .text_global_right{
+  color: #777777;
+}
+/* REVIEW: // global right */
+/* REVIEW: global left */
+#container_global_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  border : 1px solid rgba(233, 233, 233, 1);
+}
+#background_global_left{
+  background-color: rgba(4, 143, 197, 1);
+  height: 10vh;
   width: 100%;
+  z-index: 1;
 }
-table, td, tr, th{
-  border: 1px solid black;
+#foreground_global_left{
+  position: relative;
+  margin-top: -5vh;
+  z-index: 2;
+  background-color: transparent;
+}
+#foreground_global_left img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 5px solid white;
+}
+#foreground_global_left p a{
+  color: rgba(4, 143, 197, 1);
+}
+#text_container_gloabl_left{
   text-align: center;
-  vertical-align: middle;
-  padding: 10px;
 }
-/* REVIEW: end admin */
+#text_container_gloabl_left p{
+  font-size: 14px;
+}
+/* REVIEW: // global left */
+/* REVIEW: // global page */

@@ -1,30 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <title>Maxime Luce</title>
 
-    <?php require "assets/partials/head.php"; ?>
+    <meta name="title" content="Maxime Luce"/>
+
+    <?php
+    include "./assets/partials/head.php"
+     ?>
+
+    <link rel="stylesheet" media="all" href="./assets/stylesheets/index.css">
 
   </head>
   <body>
 
-    <section>
-      <?php require "assets/partials/menu.php"; ?>
+    <header id="index">
+      <div>
+        <ul>
+          <li><a href="<?= $path ?>assets/media/cv.pdf" target="_blank">CV</a></li>
+          <li><a href="<?= $path ?>animation.php">Animation</a></li>
+          <li><a href="<?= $path ?>projets.php">Projets</a></li>
+          <li><a href="<?= $path ?>blog.php">Blog</a></li>
+        </ul>
+      </div>
+    </header>
 
-      <article class="">
-        <h1>Maxime Luce</h1>
+    <header id="index_mobile">
+      <h1><a href="./index.php">Maxime Luce</a></h1>
+      <div class="menu-toggle">
+        <nav>
+        <ul>
+          <li><a href="<?= $path ?>assets/media/cv.pdf" target="_blank">CV</a></li>
+          <li><a href="<?= $path ?>animation.php">Animation</a></li>
+          <li><a href="<?= $path ?>projets.php">Projets</a></li>
+          <li><a href="<?= $path ?>blog.php">Blog</a></li>
+        </ul>
+      </nav>
+        <span class="fas fa-bars" aria-hidden="true"></span>
+      </div>
+    </header>
 
-        <p>
-        Actuellement en terminale au lycée général <span>Epsylonn</span> où je suis les enseignements de spécialité de Mathématiques et de Physique (et Maths Expertes), je suis curieux, passionné, créatif et dynamique.
-      </p><p>
-        Attaché à l'idée de partage et de vulgarisation, j'ai fondé <a href="https://le-max-de-culture.fr" target="_blank">Le Max De Culture</a> sur lequel je réalise des cours, du montage, de la gestion et bien d'autres activités. C'est une expérience plus qu'enrichissante !
-      </p><p>
-        Par le biais de mes cours, mes concours et autres activités extrascolaires, j'essaye de me préparer au mieux pour mon entrée en classe préparatoire en filière MPSI au lycée <a href="http://louislegrand.fr/" target="_blank">Louis-Le-Grand</a>. Mon rêve est en effet de pouvoir faire de la recherche en mathématique.
-      </p>
-      <p>Sur ce site, vous trouverez certaines de mes activités et concours pour en apprendre plus sur moi. Ces derniers sont répartis entre la <a href="#">Mathématique</a>, <a href="#">Le Max De Culture</a> et l'<a href="#">Informatique</a>. Enfin, il m'arrive de publier certaines de mes pensées ou remarques sur mon <a href="#">Blog</a>.</p>
-      </article>
-    </section>
+<section id="home">
+<div>
+  <p><span>Maxime LUCE</span></p>
+  <p id="presentation">Élève ingénieur à <a href="https://www.ec-lyon.fr/" target="_blank">Centrale Lyon</a>, président de <a href="https://le-max-de-culture.Fr" target="_blank">Le Max De Culture</a></p>
+</div>
 
-    <?php require "assets/partials/footer.php"; ?>
+   </section>
+   <section id="about">
+     <p class="subtitle">à propos</p>
+     <p class="title">Mon parcours en quelques mots</p>
 
+     <div id="about_container">
+       <img src="<?= $path ?>assets/media/profil.jpg" alt="">
+       <p>
+         Actuellement en première année du cursus Ingénieur Généraliste à Centrale Lyon, je suis curieux, passionné, créatif et dynamique.
+</p><p>
+Attaché à l'idée de partage et de vulgarisation, j'ai fondé <a href="https://le-max-de-culture.fr" target="_blank">Le Max De Culture</a>. Je m'occupe entre autres de la gestion associative, du serveur VPS, du montage vidéo, du planning, de la rédaction et de la communication. C'est une expérience plus qu'enrichissante !
+</p>
+<p>
+Mon but est de pouvoir obtenir mon diplôme d'ingénieur pour exercer un métier qui me plait et pouvoir continuer à développer mes projets divers et variés !</p>
+<p>Cette page est destinée à présenter certains de mes projets.</p>
+<!--
+<p>
+texte
+       </p>
+       !-->
+     </div>
+</section>
 
-    <?php require "assets/partials/foot.php"; ?>
+<section id="path">
+  <p class="title">Dernières publications</p>
+  <div id="container_path">
+    <div class="container_category_path">
+      [A venir]
+    </div>
 
+    <div class="container_category_path">
+      [A venir]
+    </div>
+
+    <div class="container_category_path">
+      [A venir]
+    </div>
+  </div>
+</section>
+
+<?php
+include "./assets/partials/footer.php"
+ ?>
+      <?php
+      include "./assets/partials/foot.php"
+       ?>
+
+       <script src="./assets/javascript/index.js"></script>
   </body>
 </html>
